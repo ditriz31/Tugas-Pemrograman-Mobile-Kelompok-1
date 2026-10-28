@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="merah_showroom">#FFC62828</color>
+    <color name="merah_tua">#FF8E0000</color>
+    <color name="putih_lembut">#FFFFF8F8</color>
+    <color name="ikon_action_mode">#FF49454F</color>
+    <color name="item_dipilih">#33C62828</color>
+    <color name="abu_garis">#33888888</color>
+    <color name="abu_nav">#FF757575</color>
+    <color name="merah_muda">#FFFFDAD6</color>
+</resources>

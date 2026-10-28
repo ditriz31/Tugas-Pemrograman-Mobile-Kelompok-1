@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.KatalogShowroom" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/merah_showroom</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/putih_lembut</item>
+        <item name="colorOnPrimaryContainer">@color/merah_tua</item>
+        <item name="colorSecondary">@color/merah_tua</item>
+        <item name="colorSecondaryContainer">@color/merah_muda</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_tutup_action</item>
+    </style>
+
+    <style name="Theme.KatalogShowroom" parent="Base.Theme.KatalogShowroom" />
+
+    <!-- Sudut membulat untuk foto mobil -->
+    <style name="ShapeFotoMobil">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <!-- Gaya teks tabel spesifikasi di halaman detail -->
+    <style name="LabelSpek">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="NilaiSpek">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

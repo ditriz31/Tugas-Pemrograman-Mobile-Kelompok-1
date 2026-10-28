@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Garuda Auto Gallery</string>
+
+    <!-- Login -->
+    <string name="subjudul_login">Temukan mobil impian Anda bersama kami</string>
+    <string name="label_nama">Nama</string>
+    <string name="hint_nama">Masukkan nama Anda</string>
+    <string name="ingat_saya">Ingat saya</string>
+    <string name="masuk">Masuk</string>
+    <string name="error_nama_kosong">Nama tidak boleh kosong</string>
+
+    <!-- Katalog -->
+    <string name="sapaan">Halo, %1$s!</string>
+    <string name="semua">Semua</string>
+    <string name="manual">Manual</string>
+    <string name="otomatis">Otomatis</string>
+    <string name="mobil_tidak_ditemukan">Mobil tidak ditemukan</string>
+    <string name="foto_mobil">Foto mobil</string>
+    <string name="logout">Logout</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="simpan">Simpan</string>
+    <string name="jumlah_dipilih">%1$d dipilih</string>
+    <string name="berhasil_disimpan">%1$d mobil disimpan</string>
+    <string name="bagikan_via">Bagikan via</string>
+    <string name="judul_bagikan">Cek mobil ini di Garuda Auto Gallery!</string>
+    <string name="teks_bagikan">%1$s (%2$d)\nTransmisi: %3$s\nHarga: %4$s</string>
+    <string name="kontak_bagikan">Info &amp; test drive: wa.me/%1$s</string>
+    <string name="bagikan_mobil">Bagikan mobil ini</string>
+
+    <!-- Mobil Tersimpan -->
+    <string name="mobil_tersimpan">Mobil Tersimpan</string>
+    <string name="hapus_semua">Hapus Semua</string>
+    <string name="belum_ada_tersimpan">Belum ada mobil tersimpan.\nTekan lama mobil di katalog untuk menyimpan.</string>
+
+    <string-array name="daftar_merek">
+        <item>Semua Merek</item>
+        <item>Toyota</item>
+        <item>Honda</item>
+        <item>Daihatsu</item>
+        <item>Mitsubishi</item>
+        <item>Suzuki</item>
+        <item>Hyundai</item>
+    </string-array>
+
+    <!-- Detail -->
+    <string name="detail_mobil">Detail Mobil</string>
+    <string name="spesifikasi">Spesifikasi</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="label_merek">Merek</string>
+    <string name="label_tahun">Tahun</string>
+    <string name="label_transmisi">Transmisi</string>
+    <string name="label_bahan_bakar">Bahan Bakar</string>
+    <string name="label_mesin">Mesin</string>
+    <string name="label_tenaga">Tenaga</string>
+    <string name="label_kapasitas">Kapasitas</string>
+    <string name="label_warna">Pilihan Warna</string>
+    <string name="format_kapasitas">%1$d penumpang</string>
+    <string name="salin">Salin Nama &amp; Harga</string>
+    <string name="berhasil_disalin">Disalin ke clipboard</string>
+    <string name="hubungi_sales">Hubungi Sales</string>
+    <string name="telepon_showroom">Telepon Showroom</string>
+    <string name="chat_whatsapp">Chat WhatsApp</string>
+    <string name="pesan_whatsapp">Halo, saya tertarik dengan %1$s. Apakah masih tersedia?</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_beranda">Beranda</string>
+    <string name="nav_belanja">Katalog</string>
+    <string name="nav_order">Booking</string>
+    <string name="nav_riwayat">Riwayat</string>
+    <string name="nav_akun">Akun</string>
+    <string name="judul_belanja">Katalog Mobil</string>
+    <string name="judul_akun">Akun Saya</string>
+
+    <!-- Beranda -->
+    <string name="selamat_datang">Selamat datang di</string>
+    <string name="tagline_beranda">Temukan mobil impian Anda bersama kami</string>
+    <string name="pilihan_mobil">Pilihan Mobil</string>
+    <string name="lihat_semua_mobil">Lihat Semua Mobil</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="deskripsi_aplikasi">Garuda Auto Gallery adalah aplikasi katalog showroom mobil digital yang dirancang untuk memudahkan Anda menemukan kendaraan impian dengan cepat dan transparan. Jelajahi berbagai pilihan merek dan tipe mobil terbaru, lihat daftar harga lengkap dalam format Rupiah, serta cek spesifikasi detail langsung dalam genggaman.\n\nIngin konsultasi lebih lanjut? Anda dapat langsung menghubungi tim sales kami melalui sambungan telepon atau WhatsApp, serta menyimpan daftar mobil favorit Anda untuk ditinjau kembali di menu Riwayat. Temukan pengalaman berbelanja mobil yang modern, mudah, dan efisien bersama Garuda Auto Gallery.</string>
+
+    <!-- Order -->
+    <!-- (dipakai versi lama) -->
+    <string name="belum_ada_order">Belum ada order.\nPilih mobil di tab Katalog lalu hubungi sales untuk memesan.</string>
+    <string name="mulai_belanja">Mulai Belanja</string>
+
+    <!-- Riwayat -->
+    <string name="jumlah_tersimpan">%1$d mobil tersimpan</string>
+    <string name="belum_ada_riwayat">Belum ada mobil yang disimpan.\nBuka detail mobil di tab Katalog lalu tekan ikon simpan.\nTekan lama untuk menghapus satu mobil.</string>
+    <string name="simpan_ke_riwayat">Simpan ke Riwayat</string>
+    <string name="hapus_dari_riwayat">Hapus dari Riwayat</string>
+    <string name="disimpan_ke_riwayat">Disimpan ke Riwayat</string>
+    <string name="dihapus_dari_riwayat">Dihapus dari Riwayat</string>
+    <string name="konfirmasi_hapus_semua">Hapus semua mobil di Riwayat?</string>
+    <string name="konfirmasi_hapus_satu">Hapus %1$s dari Riwayat?</string>
+    <string name="ya">Ya</string>
+    <string name="batal">Batal</string>
+
+    <!-- Akun -->
+    <string name="informasi_akun">Informasi Akun</string>
+    <string name="label_email">Email</string>
+    <string name="label_no_hp">No. HP</string>
+    <string name="hint_email">Masukkan email Anda</string>
+    <string name="hint_no_hp">Contoh: 081234567890</string>
+
+    <!-- Registrasi -->
+    <string name="daftar">Daftar</string>
+    <string name="daftar_akun">Daftar Akun Baru</string>
+    <string name="belum_punya_akun">Belum punya akun? Daftar</string>
+    <string name="sudah_punya_akun">Sudah punya akun? Masuk</string>
+    <string name="error_email_kosong">Email tidak boleh kosong</string>
+    <string name="error_email_tidak_valid">Format email tidak valid</string>
+    <string name="error_email_belum_terdaftar">Email belum terdaftar. Silakan daftar terlebih dahulu.</string>
+    <string name="error_email_sudah_ada">Email sudah terdaftar. Silakan masuk.</string>
+    <string name="error_no_hp_kosong">No. HP tidak boleh kosong</string>
+    <string name="error_no_hp_tidak_valid">No. HP tidak valid (9-15 digit)</string>
+    <string name="berhasil_daftar">Pendaftaran berhasil, silakan masuk</string>
+
+    <!-- Riwayat: Tersimpan & Terakhir Dilihat -->
+    <string name="tab_tersimpan">Tersimpan</string>
+    <string name="tab_dilihat">Terakhir Dilihat</string>
+    <string name="jumlah_dilihat">%1$d mobil terakhir dilihat</string>
+    <string name="belum_ada_dilihat">Belum ada mobil yang dilihat.\nBuka detail mobil di tab Katalog.</string>
+
+    <!-- Order & Booking Test Drive -->
+    <string name="judul_order">Booking Saya</string>
+    <string name="booking_test_drive">Booking Test Drive</string>
+    <string name="belum_ada_booking">Belum ada booking test drive.\nTekan tombol di atas untuk membuat jadwal.</string>
+    <string name="hint_order">Tekan untuk konfirmasi ke sales via WhatsApp, tekan lama untuk membatalkan.</string>
+    <string name="format_jadwal">%1$s • pukul %2$s</string>
+    <string name="label_mobil">Mobil</string>
+    <string name="label_tanggal">Tanggal</string>
+    <string name="label_jam">Jam</string>
+    <string name="label_catatan">Catatan (opsional)</string>
+    <string name="hint_tanggal">Pilih tanggal</string>
+    <string name="hint_jam">Pilih jam</string>
+    <string name="hint_catatan">Contoh: datang bersama keluarga</string>
+    <string name="info_booking">Pilih mobil dan jadwal test drive. Jam operasional showroom 09.00 – 17.00.</string>
+    <string name="kirim_booking">Buat Booking</string>
+    <string name="error_tanggal_kosong">Pilih tanggal terlebih dahulu</string>
+    <string name="error_jam_kosong">Pilih jam terlebih dahulu</string>
+    <string name="error_jam_operasional">Jam operasional showroom 09.00 – 17.00</string>
+    <string name="berhasil_booking">Booking berhasil dibuat. Konfirmasi ke sales lewat tab Booking.</string>
+    <string name="konfirmasi_batal_booking">Batalkan booking ini?</string>
+    <string name="pesan_booking">Halo, saya ingin konfirmasi booking test drive %1$s pada %2$s pukul %3$s.</string>
+
+    <!-- Kontak showroom (ganti dengan nomor asli) -->
+    <string name="nomor_showroom" translatable="false">081234567890</string>
+    <string name="nomor_whatsapp" translatable="false">6281234567890</string>
+</resources>
