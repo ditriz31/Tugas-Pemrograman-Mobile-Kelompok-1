@@ -41,7 +41,7 @@ class DetailActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         toolbar.setNavigationOnClickListener { finish() }
 
-        // Mengambil data yang dikirim lewat Intent
+        // Mengambill data yang dikirim lewat Intent
         val idMobil = intent.getIntExtra(EXTRA_ID_MOBIL, -1)
         val mobil = DataMobil.cariById(idMobil)
         if (mobil == null) {
