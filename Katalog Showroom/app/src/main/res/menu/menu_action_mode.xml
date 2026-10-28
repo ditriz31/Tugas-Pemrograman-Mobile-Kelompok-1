@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contextual Action Mode saat beberapa mobil dipilih -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_simpan"
+        android:icon="@drawable/ic_simpan_action"
+        android:showAsAction="ifRoom"
+        android:title="@string/simpan" />
+
+    <item
+        android:id="@+id/menu_bagikan"
+        android:icon="@drawable/ic_bagikan_action"
+        android:showAsAction="ifRoom"
+        android:title="@string/bagikan" />
+</menu>
