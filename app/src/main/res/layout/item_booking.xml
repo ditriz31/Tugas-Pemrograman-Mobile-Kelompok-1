@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Satu baris booking test drive -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivMobil"
+        android:layout_width="88dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/putih_lembut"
+        android:contentDescription="@string/foto_mobil"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_mobil"
+        app:shapeAppearanceOverlay="@style/ShapeFotoMobil"
+        app:strokeColor="@color/merah_showroom"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/tvNamaMobil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivMobil"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/ivMobil"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvJadwal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNamaMobil"
+        android:layout_alignStart="@id/tvNamaMobil"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/merah_showroom"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCatatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvJadwal"
+        android:layout_alignStart="@id/tvNamaMobil"
+        android:layout_marginTop="2dp"
+        android:textSize="13sp" />
+</RelativeLayout>
