@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Constraint Layout: halaman detail harga & spesifikasi mobil -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/merah_showroom"
+        android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight"
+        app:title="@string/detail_mobil"
+        app:titleTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/btnHubungi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivMobil"
+                android:layout_width="0dp"
+                android:layout_height="210dp"
+                android:background="@color/putih_lembut"
+                android:contentDescription="@string/foto_mobil"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_mobil"
+                app:shapeAppearanceOverlay="@style/ShapeFotoMobil"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvNama"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivMobil" />
+
+            <TextView
+                android:id="@+id/tvHarga"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/merah_showroom"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvNama" />
+
+            <TextView
+                android:id="@+id/tvJudulSpek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/spesifikasi"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvHarga" />
+
+            <!-- Label spesifikasi (kolom kiri) -->
+            <TextView
+                android:id="@+id/lblMerek"
+                style="@style/LabelSpek"
+                android:text="@string/label_merek"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvJudulSpek" />
+
+            <TextView
+                android:id="@+id/lblTahun"
+                style="@style/LabelSpek"
+                android:text="@string/label_tahun"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblMerek" />
+
+            <TextView
+                android:id="@+id/lblTransmisi"
+                style="@style/LabelSpek"
+                android:text="@string/label_transmisi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblTahun" />
+
+            <TextView
+                android:id="@+id/lblBahanBakar"
+                style="@style/LabelSpek"
+                android:text="@string/label_bahan_bakar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblTransmisi" />
+
+            <TextView
+                android:id="@+id/lblMesin"
+                style="@style/LabelSpek"
+                android:text="@string/label_mesin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblBahanBakar" />
+
+            <TextView
+                android:id="@+id/lblTenaga"
+                style="@style/LabelSpek"
+                android:text="@string/label_tenaga"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblMesin" />
+
+            <TextView
+                android:id="@+id/lblKapasitas"
+                style="@style/LabelSpek"
+                android:text="@string/label_kapasitas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblTenaga" />
+
+            <TextView
+                android:id="@+id/lblWarna"
+                style="@style/LabelSpek"
+                android:text="@string/label_warna"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblKapasitas" />
+
+            <!-- Nilai spesifikasi (kolom kanan, sejajar dengan label) -->
+            <TextView
+                android:id="@+id/tvMerek"
+                style="@style/NilaiSpek"
+                app:layout_constraintBaseline_toBaselineOf="@id/lblMerek"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lblMerek" />
+
+            <TextView
+                android:id="@+id/tvTahun"
+                style="@style/NilaiSpek"
+                app:layout_constraintBaseline_toBaselineOf="@id/lblTahun"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lblTahun" />
+
+            <TextView
+                android:id="@+id/tvTransmisi"
+                style="@style/NilaiSpek"
+                app:layout_constraintBaseline_toBaselineOf="@id/lblTransmisi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lblTransmisi" />
+
+            <TextView
+                android:id="@+id/tvBahanBakar"
+                style="@style/NilaiSpek"
+                app:layout_constraintBaseline_toBaselineOf="@id/lblBahanBakar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lblBahanBakar" />
+
+            <TextView
+                android:id="@+id/tvMesin"
+                style="@style/NilaiSpek"
+                app:layout_constraintBaseline_toBaselineOf="@id/lblMesin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lblMesin" />
+
+            <TextView
+                android:id="@+id/tvTenaga"
+                style="@style/NilaiSpek"
+                app:layout_constraintBaseline_toBaselineOf="@id/lblTenaga"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lblTenaga" />
+
+            <TextView
+                android:id="@+id/tvKapasitas"
+                style="@style/NilaiSpek"
+                app:layout_constraintBaseline_toBaselineOf="@id/lblKapasitas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lblKapasitas" />
+
+            <TextView
+                android:id="@+id/tvWarna"
+                style="@style/NilaiSpek"
+                app:layout_constraintBaseline_toBaselineOf="@id/lblWarna"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/lblWarna" />
+
+            <TextView
+                android:id="@+id/tvJudulDeskripsi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/deskripsi"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblWarna" />
+
+            <TextView
+                android:id="@+id/tvDeskripsi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvJudulDeskripsi" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnHubungi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/hubungi_sales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
