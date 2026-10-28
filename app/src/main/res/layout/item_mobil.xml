@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Relative Layout: satu baris item mobil pada ListView -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_mobil"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="16dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivMobil"
+        android:layout_width="104dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/putih_lembut"
+        android:contentDescription="@string/foto_mobil"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_mobil"
+        app:shapeAppearanceOverlay="@style/ShapeFotoMobil"
+        app:strokeColor="@color/merah_showroom"
+        app:strokeWidth="1dp" />
+
+    <!-- Tombol bagikan per mobil. focusable=false agar klik item ListView tetap jalan -->
+    <ImageButton
+        android:id="@+id/btnBagikan"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/bagikan_mobil"
+        android:focusable="false"
+        android:src="@drawable/ic_bagikan" />
+
+    <TextView
+        android:id="@+id/tvNamaMobil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivMobil"
+        android:layout_marginStart="16dp"
+        android:layout_toStartOf="@id/btnBagikan"
+        android:layout_toEndOf="@id/ivMobil"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvInfoMobil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNamaMobil"
+        android:layout_toStartOf="@id/btnBagikan"
+        android:layout_alignStart="@id/tvNamaMobil"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvHargaMobil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvInfoMobil"
+        android:layout_toStartOf="@id/btnBagikan"
+        android:layout_alignStart="@id/tvNamaMobil"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/merah_showroom"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

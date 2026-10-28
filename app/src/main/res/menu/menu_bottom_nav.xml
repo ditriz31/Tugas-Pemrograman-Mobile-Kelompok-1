@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Menu Bottom Navigation: 5 tab utama -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_beranda"
+        android:icon="@drawable/ic_nav_beranda"
+        android:title="@string/nav_beranda" />
+    <item
+        android:id="@+id/nav_belanja"
+        android:icon="@drawable/ic_nav_belanja"
+        android:title="@string/nav_belanja" />
+    <item
+        android:id="@+id/nav_order"
+        android:icon="@drawable/ic_nav_order"
+        android:title="@string/nav_order" />
+    <item
+        android:id="@+id/nav_riwayat"
+        android:icon="@drawable/ic_nav_riwayat"
+        android:title="@string/nav_riwayat" />
+    <item
+        android:id="@+id/nav_akun"
+        android:icon="@drawable/ic_nav_akun"
+        android:title="@string/nav_akun" />
+</menu>
