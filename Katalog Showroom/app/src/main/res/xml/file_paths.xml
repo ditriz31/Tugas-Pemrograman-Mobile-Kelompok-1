@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Folder cache yang boleh dibagikan ke aplikasi lain lewat FileProvider (foto mobil saat share) -->
-<paths>
-    <cache-path
-        name="foto_bagikan"
-        path="bagikan/" />
-</paths>
