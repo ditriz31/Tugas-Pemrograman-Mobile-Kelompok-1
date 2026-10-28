@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Popup Menu pada tombol Hubungi Sales -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_telepon"
+        android:title="@string/telepon_showroom" />
+
+    <item
+        android:id="@+id/menu_whatsapp"
+        android:title="@string/chat_whatsapp" />
+
+    <item
+        android:id="@+id/menu_booking"
+        android:title="@string/booking_test_drive" />
+</menu>

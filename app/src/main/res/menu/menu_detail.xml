@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Options Menu pada toolbar halaman detail: tombol bagikan & simpan ke Riwayat (pojok kanan atas) -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_bagikan_detail"
+        android:icon="@drawable/ic_bagikan_putih"
+        android:title="@string/bagikan"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_simpan_detail"
+        android:icon="@drawable/ic_bookmark_kosong_putih"
+        android:title="@string/simpan_ke_riwayat"
+        app:showAsAction="always" />
+</menu>
